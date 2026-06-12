@@ -23,14 +23,14 @@ hr-analytics-attrition/
 └── README.md
 ```
 
-## 🔍 Hallazgos principales (EDA)
+## Hallazgos principales (EDA)
 
 - Solo el **16.1%** de los empleados presenta Attrition = Yes (dataset desbalanceado).
 - **OverTime** es un fuerte predictor: la proporción de renuncia es notablemente mayor entre quienes hacen horas extra.
 - A menor **JobSatisfaction**, mayor probabilidad de renuncia.
 - Los empleados que renuncian tienden a ser más jóvenes, con menor salario, mayor distancia al trabajo y menor antigüedad (<5 años).
 
-## ⚙️ Feature Engineering
+## Feature Engineering
 
 - Eliminación de columnas sin valor predictivo (`EmployeeCount`, `Over18`, `StandardHours`, `EmployeeNumber`).
 - Encoding binario para variables de 2 categorías (`Attrition`, `OverTime`, `Gender`).
@@ -41,6 +41,10 @@ hr-analytics-attrition/
 - **Algoritmo:** Random Forest Classifier
 - **Manejo de desbalance:** SMOTE (oversampling de la clase minoritaria)
 - **Ajuste de umbral:** se redujo el umbral de decisión de 0.5 a 0.35 para priorizar recall
+
+## Dashboard
+
+![Dashboard Power BI](images/DashboardRH.jpeg)
 
 ### Métricas finales
 
